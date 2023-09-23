@@ -26,12 +26,12 @@ const Hero = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-4 pt-10 items-center md:pl-10 md:text-left text-center border-b">
         <div className="relative">
-          <img
-            className="absolute lg:right-[15vw] md:right-[11vw] md:-top-10"
-            src={LightBulb}
-            alt="light bulb"
-            width={isMobile ? "18px" : "40px"}
-          />
+          {/*<img*/}
+          {/*  className="absolute lg:right-[15vw] md:right-[11vw] md:-top-10"*/}
+          {/*  src={LightBulb}*/}
+          {/*  alt="light bulb"*/}
+          {/*  width={isMobile ? "18px" : "40px"}*/}
+          {/*/>*/}
 
           <h2 className={`font-secondary font-bold lg:text-[50px] text-[30px] md:leading-[70px]`}>
             getlinked Tech
@@ -44,7 +44,7 @@ const Hero = () => {
             <img src={Fire} alt="" width={isMobile ? "32px" : "45px"} />
           </div>
 
-          <p className="md:text-[20px] w-9/12 mx-auto">
+          <p className="md:text-[20px] w-9/12 md:mx-0 mx-auto">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
           </p>
           <div className="md:pt-14 pt-8">
