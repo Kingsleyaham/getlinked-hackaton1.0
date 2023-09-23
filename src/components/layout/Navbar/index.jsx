@@ -6,7 +6,7 @@ import RegisterButton from "../../RegisterButton.jsx";
 import Title from "./Title.jsx";
 
 // eslint-disable-next-line react/prop-types
-const Navbar = ({isMobile}) => {
+const Navbar = ({isMobile, scrollToSection}) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const showMobileNavbar = () => {
@@ -33,18 +33,18 @@ const Navbar = ({isMobile}) => {
         )}
 
         <li onClick={closeFromRouteClick}>
-          <Link to="/" className="link">
+          <Link to="/#timeline" className="link" id="timelineLink" onClick={(e) => scrollToSection(e)}>
             Timeline
           </Link>
         </li>
         <li onClick={closeFromRouteClick}>
-          <Link to="/about">Overview</Link>
+          <Link to="/#overview" id="overviewLink" onClick={(e) => scrollToSection(e)}>Overview</Link>
         </li>
         <li onClick={closeFromRouteClick}>
-          <Link to="/stories">FAQs</Link>
+          <Link to="/#faq" id="faqLink" onClick={(e) => scrollToSection(e)}>FAQs</Link>
         </li>
         <li onClick={closeFromRouteClick}>
-          <Link to="/events">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <RegisterButton />

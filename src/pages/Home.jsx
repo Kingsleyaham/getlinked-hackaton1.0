@@ -1,15 +1,17 @@
-import Faqs from "../components/section/Faqs.jsx";
+import FrequentlyAskedQuestions from "../components/section/Faqs.jsx";
 import Hero from "../components/section/Hero.jsx";
 import Overview from "../components/section/Overview.jsx";
 import Timeline from "../components/section/Timeline.jsx";
 
-const Home = () => {
+// eslint-disable-next-line react/prop-types
+const Home = ({faqRef, overviewRef, timelineRef}) => {
+
   return (
     <div className="px-7">
       <Hero />
-      <Overview />
-      <Faqs />
-      <Timeline />
+      <Overview overviewRef={overviewRef}/>
+      <FrequentlyAskedQuestions faqRef={faqRef}/>
+      <Timeline  timelineRef={timelineRef}/>
     </div>
   );
 };
