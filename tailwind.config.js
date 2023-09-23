@@ -7,6 +7,7 @@ export default {
         pink: "#D434FE",
         purple: "#903AFF",
         "dark-purple": "#150E28",
+        "light-pink": "#FF26B9"
       },
       fontFamily: {
         primary: ["Montserrat"],
