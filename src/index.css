@@ -15,6 +15,11 @@
   }
 
   .small {
-    @apply text-sm
+    @apply text-sm;
   }
+
+  .panel {
+    @apply flex items-center justify-between gap-4 pb-3 border-b border-pink text-[14px];
+  }
+
 }
