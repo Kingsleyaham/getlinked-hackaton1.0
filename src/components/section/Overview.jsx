@@ -3,10 +3,10 @@ import GirlWithLaptop from "../../assets/img/girlsittingdown.png";
 import JudgingCharacter from "../../assets/img/judgingCharacter.png";
 import PurpleStar from "../../assets/img/star pu.png";
 
-const Overview = () => {
+const Overview = ({overviewRef}) => {
   return (
     <>
-      <div className="border-b">
+      <div className="border-b" ref={overviewRef}>
         <div className="grid md:grid-cols-2 items-center justify-center space-y-16 md:space-y-0 gap-8 w-10/12 mx-auto py-2">
           <div>
             <img src={BigIdea} alt="the big idea" />

@@ -2,9 +2,9 @@ import ManThinking from "../../assets/img/cwok_casual_21 1.png";
 import Plus from "../../assets/img/plus sign.png";
 import FaqPanel from "../FaqPanel.jsx";
 
-const FrequentlyAskedQuestions = () => {
+const FrequentlyAskedQuestions = ({faqRef}) => {
   return (
-    <div className="border-b py-16">
+    <div className="border-b py-16" ref={faqRef}>
       <div className="grid md:grid-cols-2 justify-center space-y-16 md:space-y-0 gap-8 w-10/12  mx-auto py-2">
         <div>
           <div>
