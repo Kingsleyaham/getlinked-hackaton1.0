@@ -1,0 +1,107 @@
+body {
+  background: #150e28;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.btn-primary {
+  background: linear-gradient(270deg, #903aff 0%, #d434fe 56.42%, #ff26b9 99.99%, #fe34b9 100%);
+}
+
+nav .mobile {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: fadeNavIn 0.5s;
+  animation: fadeNavIn 0.5s;
+
+}
+
+@keyframes fadeNavIn {
+  from {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+}
+
+.nav ul li {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav ul li a {
+  display: inline-block;
+  height: 100%;
+}
+
+.nav i {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input-control {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 55%;
+}
+
+.dropdown {
+  background: rgba(21, 14, 40, 0.8);
+  /*background: #150E28;*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown option {
+  /*color: red;*/
+}
+
+.border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+
+  .nav ul.mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 160px 50px 0px;
+    background-color: #150e28;
+    z-index: 30;
+  }
+
+  .nav li a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .form-wrapper {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+  }
+}

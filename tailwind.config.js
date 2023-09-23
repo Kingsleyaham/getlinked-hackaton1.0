@@ -2,7 +2,18 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pink: "#D434FE",
+        purple: "#903AFF",
+        "dark-purple": "#150E28",
+      },
+      fontFamily: {
+        primary: ["Montserrat"],
+        secondary: ["Clash Display", "sans-serif"],
+        tertiary: ["Unica One", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
