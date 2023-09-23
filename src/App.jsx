@@ -17,7 +17,7 @@ function App() {
 
   const scrollToSection = (ev) => {
       // ev.preventDefault();
-      ev.stopPropagation();
+      
     let elem = null;
 
     if (ev.target.id === "faqLink") elem =  faqRef.current;
